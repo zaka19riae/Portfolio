@@ -33,3 +33,16 @@
 .btn:hover {
 background-color: gray;
 }
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+.about-img {
+    width: 100%;
+    max-width: 20rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
