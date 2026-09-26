@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,12 +17,15 @@
 }
 
 .hero {
+    padding: 5rem 1.2rem;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
+
+
 }
 
 .btn {
@@ -38,7 +42,7 @@
 }
 
 .btn:hover {
-background-color: gray;
+    background-color: gray;
 }
 
 .about {
@@ -46,7 +50,10 @@ background-color: gray;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    padding: 8rem 2rem;
+    padding: 5rem 1.2rem;
+    min-height: 100vh;
+
+
 }
 
 .about-img {
@@ -57,7 +64,9 @@ background-color: gray;
 }
 
 .skills {
-        padding: 9rem 2rem;
+    padding: 5rem 1.2rem;
+    min-height: 100vh;
+
 }
 
 .skills-title {
@@ -82,7 +91,8 @@ background-color: gray;
 }
 
 .projects {
-    padding: 8rem 2rem;
+    padding: 5rem 1.2rem;
+    min-height: 100vh;
 }
 
 .projects-title {
@@ -121,5 +131,61 @@ background-color: gray;
 .project-info p {
     padding: 2rem;
 } 
+
+.contact {
+    padding: 5rem 1.2rem;
+    min-height: 100vh;
+
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+
+
+} 
+
+.contact-form input:invalid {
+    border: 2px solid red;
+}
+
+.contact-form textarea {
+    resize:vertical;
+    min-height: 80px;
+
+}
+
+.contact-form button {
+    width: 10rem;
+    align-self: center;
+}
 
 
