@@ -24,8 +24,6 @@
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-
-
 }
 
 .btn {
@@ -173,8 +171,8 @@
 
 } 
 
-.contact-form input:invalid {
-    border: 2px solid red;
+.contact-form input:user-invalid {
+    border: 1px solid red;
 }
 
 .contact-form textarea {
@@ -183,9 +181,12 @@
 
 }
 
-.contact-form button {
-    width: 10rem;
-    align-self: center;
+@media (max-width: 768px) {
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
